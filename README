@@ -1,0 +1,9 @@
+##########################################
+#         PHP/Base64 Encoder 1.0         #
+# A script that will encode any binary   #
+# file and output a self-extracting php. #
+##########################################
+
+Usage: phpbase64.rb [options] filename
+
+Example: phpbase64.rb -o selfextractor.php program.exe
