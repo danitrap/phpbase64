@@ -7,3 +7,11 @@
 Usage: phpbase64.rb [options] filename
 
 Example: phpbase64.rb -o selfextractor.php program.exe
+
+CHANGELOG
+
+Version 1.1 
+Added two more options: -x will automatically execute the extracted file, -v puts the php script in verbose mode
+
+Version 1.0 
+Initial release

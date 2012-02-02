@@ -2,7 +2,7 @@
 ##########################################
 #         PHP/Base64 Encoder 1.1         #
 # A script that will encode any binary   #
-# file and output a self-extracting php. #
+# file into a self-extracting php.       #
 ##########################################
 
 require 'base64'
